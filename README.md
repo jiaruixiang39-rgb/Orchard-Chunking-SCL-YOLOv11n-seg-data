@@ -1,4 +1,4 @@
-# Orchard chunking and SCL-YOLOv11n-seg: sample images and experimental data
+# Orchard chunking and SCL-YOLOv11n-seg: sample chunks and experimental data
 
 This repository accompanies the study on joint instance segmentation of trunks,
 branches, and young apples in high-density dwarf apple orchards using overlapping
@@ -6,12 +6,13 @@ image chunking and SCL-YOLOv11n-seg.
 
 ## Contents
 
-- `images/originals/`: ten unmodified RGB orchard photographs, comprising five
-  training images and five validation images from the original image-level split.
-- `images/chunks/`: ten corresponding 640 x 640 pixel chunk samples, one chunk
-  for each original image. These are copied unchanged from the chunked dataset.
-- `metadata/image_pairs.csv`: the one-to-one original/chunk correspondence,
-  crop coordinates, row/column indices, split, and window type.
+- `images/chunks/`: ten public 640 x 640 pixel chunk samples, comprising five
+  training chunks and five validation chunks. These are copied unchanged from
+  the chunked dataset, with one chunk from each of ten source photographs.
+- `metadata/image_pairs.csv`: chunk-to-source identifiers, source image sizes,
+  crop coordinates, row/column indices, split, and window type. The
+  `source_original_filename` field identifies a source photograph; it does not
+  refer to an original image file provided in this public release.
 - `data/table2_chunking_summary.csv` and `table2_chunking_per_run.csv`: the
   whole-image and chunked-image comparisons across random seeds 0, 1, and 2.
 - `data/table3_baseline_vs_SCL_summary.csv`: the baseline and improved-model
@@ -19,27 +20,29 @@ image chunking and SCL-YOLOv11n-seg.
 - `data/table4_ablation_summary.csv`, `table4_ablation_mask_per_run.csv`, and
   `table4_complexity.csv`: the four progressive module configurations.
 - `data/table5_model_comparison_seed0.csv`: five-model comparison for seed 0.
-- `data/training_histories/`: numeric training logs for the Table 2 and Table 4
-  experiments. The manifest records each run and its selected checkpoint epoch.
-- `metadata/`: image and training-history manifests and file checksums.
+- `data/training_histories/`: fifteen numeric training logs for the Table 2 and
+  Table 4 experiments. The manifest records each run and its selected checkpoint
+  epoch.
+- `metadata/`: manifests and file checksums. The image manifest lists only the
+  ten publicly included chunks.
 
 ## Image samples and annotation access
 
-The complete source collection comprises 200 RGB images split at the original
-image level into 160 training and 40 validation images. The ten original
-photographs and ten corresponding chunks provided here are illustrative samples,
-not the complete benchmark dataset. For each split, five original images were
-selected at evenly spaced positions in the filename-sorted list. All image files
-retain their source filenames and original file contents. Exactly one chunk is
-included for each original image; the release does not include every chunk from
-each original. Six regular chunks, two right-edge chunks, one bottom-edge chunk,
-and one bottom-right corner chunk illustrate the chunking layout.
+The complete source collection comprises 200 RGB photographs split at the
+original image level into 160 training and 40 validation images. Original
+photographs are not included in this public release. The ten public chunks are
+illustrative samples, not the complete benchmark dataset. They come from five
+training source images and five validation source images selected at evenly
+spaced positions in each filename-sorted source list. Exactly one chunk from each
+source image is included. All ten chunk files retain their source filenames and
+original file contents. Six regular chunks, two right-edge chunks, one bottom-edge
+chunk, and one bottom-right corner chunk illustrate the chunking layout.
 
-Crop coordinates are recorded in pixels in the original image: x increases
+Crop coordinates are recorded in pixels in the source image: x increases
 rightward and y increases downward. The top-left image pixel is (0, 0).
 The x0/y0 bounds are inclusive and the x1/y1 bounds are exclusive. Row and column
 indices are zero-based. These are crop positions, not object annotations.
-For a 3072 x 4096 original image, the final boundary-aligned starts are
+For a 3072 x 4096 source image, the final boundary-aligned starts are
 x = 2432 and y = 3456; these retain the prescribed 640 x 640 chunk size.
 
 Images were collected at the Xinyuan apple demonstration orchard in Weihai,
