@@ -1,0 +1,5 @@
+configuration,parameters,parameters_million,GFLOPs_reported,input_width,input_height,basis
+baseline,2835153,2.835153,10.2,640,640,deployment_fused_parameters_and_reported_THOP_GFLOPs
+A,4839633,4.839633,15.2,640,640,deployment_fused_parameters_and_reported_THOP_GFLOPs
+AB,5928676,5.928676,20.6,640,640,deployment_fused_parameters_and_reported_THOP_GFLOPs
+ABC,5365569,5.365569,18.9,640,640,deployment_fused_parameters_and_reported_THOP_GFLOPs

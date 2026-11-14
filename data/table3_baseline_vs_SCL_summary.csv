@@ -1,0 +1,13 @@
+configuration,model,SPDConv,CAFMFusion,LSDECD,metric,mean_percent,SD_percent,n,SD_ddof,source_precision
+baseline,YOLOv11n-seg,0,0,0,Mask P,75.22866666666667,0.25680018172371555,3,1,stored_five_decimal_metric
+baseline,YOLOv11n-seg,0,0,0,Mask R,66.479,0.14203168660548954,3,1,stored_five_decimal_metric
+baseline,YOLOv11n-seg,0,0,0,Dice,77.83,0.11,3,1,reported_terminal_summary_rounded
+baseline,YOLOv11n-seg,0,0,0,IoU,63.93,0.14,3,1,reported_terminal_summary_rounded
+baseline,YOLOv11n-seg,0,0,0,Mask mAP50,72.72733333333333,0.24631348589416158,3,1,stored_five_decimal_metric
+baseline,YOLOv11n-seg,0,0,0,Mask mAP50-95,36.905,0.17887425751068822,3,1,stored_five_decimal_metric
+ABC,SCL-YOLOv11n-seg,1,1,1,Mask P,75.52166666666666,0.3002487857316551,3,1,stored_five_decimal_metric
+ABC,SCL-YOLOv11n-seg,1,1,1,Mask R,68.083,0.29212839642869365,3,1,stored_five_decimal_metric
+ABC,SCL-YOLOv11n-seg,1,1,1,Dice,77.98,0.12,3,1,reported_terminal_summary_rounded
+ABC,SCL-YOLOv11n-seg,1,1,1,IoU,64.12,0.17,3,1,reported_terminal_summary_rounded
+ABC,SCL-YOLOv11n-seg,1,1,1,Mask mAP50,74.10333333333334,0.08183112692205413,3,1,stored_five_decimal_metric
+ABC,SCL-YOLOv11n-seg,1,1,1,Mask mAP50-95,38.32366666666667,0.10761195720426858,3,1,stored_five_decimal_metric

@@ -1,0 +1,6 @@
+model,seed,Mask_P_percent,Mask_R_percent,Dice_percent,IoU_percent,Mask_mAP50_percent,Mask_mAP50-95_percent,parameters,parameters_million,GFLOPs_source_value,AP_source,Dice_IoU_source,GFLOPs_basis
+Mask R-CNN (R50-FPN),0,67.97227243086957,59.01343095717366,61.64649128288594,45.000448464088564,63.48620538257025,31.097831078794268,43986279,43.986279,215.4269,native_COCOeval_training_record,supplementary_evaluation_same_checkpoint,full_pipeline_supplementary_evaluation
+YOLACT (R50-FPN),0,59.64921717016881,51.77328223929395,60.78476627103536,44.053962104243396,51.716142389546825,23.103039845728564,30612699,30.612699,148.3734,native_COCOeval_training_record,supplementary_evaluation_same_checkpoint,full_pipeline_supplementary_evaluation
+YOLOv8n-seg,0,74.681,66.509,77.69656490054332,63.75297554822028,72.26,36.679,3258649,3.258649,11.9728128,native_Ultralytics_training_record,supplementary_evaluation_same_checkpoint,reported_THOP
+YOLOv12n-seg,0,77.158,66.08000000000001,77.84718925589948,63.94417132959737,73.571,37.645,2809729,2.809729,10.207488,native_Ultralytics_training_record,supplementary_evaluation_same_checkpoint,reported_THOP
+SCL-YOLOv11n-seg,0,75.691,67.796,78.10265819127062,64.30286336932035,74.073,38.2,5365569,5.365569,18.913792,native_Ultralytics_training_record,supplementary_evaluation_same_checkpoint,reported_THOP

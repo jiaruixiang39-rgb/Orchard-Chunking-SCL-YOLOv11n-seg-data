@@ -1,0 +1,11 @@
+sample_id,split,original_file,chunk_file,original_width,original_height,chunk_width,chunk_height,row_index_zero_based,column_index_zero_based,x0_inclusive,y0_inclusive,x1_exclusive,y1_exclusive,window_type
+sample_01,train,images/originals/train/IMG_20250515_174735.jpg,images/chunks/train/IMG_20250515_174735_chunk_r03_c02.jpg,3072,4096,640,640,3,2,1024,1536,1664,2176,regular
+sample_02,train,images/originals/train/IMG_20250515_174902.jpg,images/chunks/train/IMG_20250515_174902_chunk_r04_c02.jpg,3072,4096,640,640,4,2,1024,2048,1664,2688,regular
+sample_03,train,images/originals/train/IMG_20250516_172042_1.jpg,images/chunks/train/IMG_20250516_172042_1_chunk_r03_c03.jpg,3072,4096,640,640,3,3,1536,1536,2176,2176,regular
+sample_04,train,images/originals/train/IMG_20250516_172206_1.jpg,images/chunks/train/IMG_20250516_172206_1_chunk_r03_c05.jpg,3072,4096,640,640,3,5,2432,1536,3072,2176,right_edge
+sample_05,train,images/originals/train/IMG_20250516_172257_1.jpg,images/chunks/train/IMG_20250516_172257_1_chunk_r07_c02.jpg,3072,4096,640,640,7,2,1024,3456,1664,4096,bottom_edge
+sample_06,val,images/originals/val/IMG_20250515_174736.jpg,images/chunks/val/IMG_20250515_174736_chunk_r03_c02.jpg,3072,4096,640,640,3,2,1024,1536,1664,2176,regular
+sample_07,val,images/originals/val/IMG_20250515_174854.jpg,images/chunks/val/IMG_20250515_174854_chunk_r04_c03.jpg,3072,4096,640,640,4,3,1536,2048,2176,2688,regular
+sample_08,val,images/originals/val/IMG_20250515_174921_1.jpg,images/chunks/val/IMG_20250515_174921_1_chunk_r03_c03.jpg,3072,4096,640,640,3,3,1536,1536,2176,2176,regular
+sample_09,val,images/originals/val/IMG_20250516_172213_1.jpg,images/chunks/val/IMG_20250516_172213_1_chunk_r03_c05.jpg,3072,4096,640,640,3,5,2432,1536,3072,2176,right_edge
+sample_10,val,images/originals/val/IMG_20250516_172254_1.jpg,images/chunks/val/IMG_20250516_172254_1_chunk_r07_c05.jpg,3072,4096,640,640,7,5,2432,3456,3072,4096,corner
